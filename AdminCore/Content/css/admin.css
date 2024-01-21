@@ -1,0 +1,327 @@
+﻿@import url('../fonts/MainFont.css');
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: IRANSans,Tahoma,'Times New Roman';
+    font-size: 0.9rem;
+    direction: rtl;
+    text-align: right;
+}
+header a, header i {
+    color: rgba(0,0,0,.4);
+    font-weight: 400;
+    
+}
+    header a:hover, header i:hover {
+        color:dimgray;
+    }
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid #c8ced3;
+}
+/*logosite*/
+a.Heilton-logo {
+    /*margin-top: -13px;*/
+    display: block;
+    text-decoration: none;
+    background-color: white;
+    min-height: 50px;
+    /*padding-bottom: 5px;*/
+    border-bottom: 1px solid #c8ced3;
+}
+.hidePanel{
+    display:none !important;
+}
+
+
+.Heilton-logo>h3 {
+    font-family: 'Times New Roman';
+    text-align: center;
+    color: black;
+    padding-top: 1rem;
+    font-weight: 900;
+}
+/*menu top*/
+
+#Heilton-MenuTop>i {
+    font-size: 17px;
+    padding-top: 10px;
+    cursor: pointer;
+    padding-right:10px;
+}
+
+#Heilton-MenuTop {
+    background-color: white;
+}
+    #Heilton-MenuTop ul li i{
+        padding:10px 5px 0 5px;
+        cursor :pointer;
+    }
+    #Heilton-MenuTop ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+    }
+
+
+
+#Heilton-MenuTop ul > li {
+    padding-left: 5px;
+    padding-top:2px;
+}
+
+    #Heilton-MenuTop ul > li > a {
+        position: relative;
+    }
+
+        #Heilton-MenuTop ul > li > a .notification {
+            display: block;
+            position: absolute;
+            bottom: 19px;
+        }
+
+  
+
+    #Heilton-MenuTop ul > li > img {
+        width: 27px;
+        height: 27px;
+        margin-top: 3px;
+        cursor: pointer;
+    }
+
+    #Heilton-MenuTop ul > li i {
+        /*color: white;*/
+        font-size: 18px;
+        margin-top:2px;
+    }
+
+/*aside right*/
+#Heilton-asideRight {
+    color: white;
+    position: absolute;
+    height: calc(100vh - 55px);
+    right: 0;
+    min-width: 200px;
+    margin-top: 89px;
+    /*display: none;*/
+    z-index: 2;
+    min-height:90%;
+    background-color: #2f353a;
+}
+    #Heilton-asideRight>section>ul {
+        background-color: #2f353a;
+    }
+
+    #Heilton-asideRight ul > li {
+        width: 100%;
+        position: relative;
+        z-index:2;
+    }
+        #Heilton-asideRight >section> ul > li:first-child {
+            background-color: #3a4248;
+        }
+            #Heilton-asideRight >section> ul > li:first-child>a{
+                text-align:center;
+                font-size:1.5rem;
+                font-weight:500;
+            }
+
+            #Heilton-asideRight ul a {
+                color: white;
+                font-size: 12px;
+                display: block;
+                padding: .75rem 1rem;
+                cursor: pointer;
+            }
+                #Heilton-asideRight ul a i {
+                    color: #73818f;
+                    margin-left:.5rem;
+                }
+    #Heilton-asideRight li > a:hover i{
+        color:white;
+    }
+    #Heilton-asideRight li > a {
+        background-color: initial !important;
+    }
+
+    #Heilton-asideRight ul > li > a:hover {
+        background-color: #1d97c2 !important;
+        border-right: 2px solid orange;
+        text-decoration: none;
+    }
+
+    #Heilton-asideRight li ul {
+        background-color: rgba(0,0,0,.2) ;
+    }
+
+        #Heilton-asideRight li ul > li > a:hover {
+            border: 0;
+            right: 0;
+        }
+
+/*Aside Left*/
+#Heilton-asideLeft {
+    background-color: #222D32;
+    color: white;
+    position: absolute;
+    left: 0;
+    display: none;
+    top:123px;
+    z-index:2;
+    padding:1rem;
+}
+
+    #Heilton-asideLeft li > a {
+        color: white;
+        background-color: initial !important;
+        padding: .5rem 1rem;
+    }
+
+        #Heilton-asideLeft li > a:hover, #Heilton-asideLeft li > a.active {
+            background-color: #2c3e50 !important;
+            border-color: gray;
+            border-bottom-color: transparent;
+        }
+
+.Heilton-Box {
+    background-color: #3498DB;
+    min-height: 90px;
+    min-width: 90px;
+    float: right;
+    margin: 10px 5px 10px 5px;
+
+}
+   
+    .Heilton-Box p {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .Heilton-Box i {
+        padding: 10px 35px 0 0;
+        font-size: 20px;
+    }
+
+    .Heilton-Box input {
+        margin: 10px 15px 0 0;
+    }
+
+    .Heilton-Box:hover {
+        border: 2px solid white;
+        cursor: pointer;
+    }
+/*  image admin   */
+#Heilton-AdminPic {
+    width: 250px;
+    min-height: 250px;
+    position: absolute;
+    left: 40px;
+    display: none;
+    z-index: 2;
+    top: 123px;
+    background-color: #222d32;
+}
+
+    #Heilton-AdminPic img {
+        width: 100px;
+        height: 100px;
+        margin: 20px 80px;
+    }
+
+    #Heilton-AdminPic i {
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    #Heilton-AdminPic p {
+        text-align: center;
+        color: white;
+        padding-bottom: 20px;
+    }
+
+.W50 {
+    min-width: 50px !important;
+    transition-duration: 0.1s;
+}
+
+.MW50 {
+    margin-right: 0px !important;
+    transition-duration: 0.2s;
+}
+#Heilton-Center {
+    padding-top: 89px;
+    /*background-color: whitesmoke;*/
+}
+    #Heilton-Center .breadcrumb {
+        background-color: white;
+        padding: .3rem .3rem;
+        border-bottom: 1px solid #c8ced3;
+    }
+.breadcrumb-item.active a {
+    color: #6c757d;
+    text-decoration:none;
+}
+.breadcrumb-item + .breadcrumb-item {
+    padding-left: .2rem;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    padding-left: .5rem;
+}
+/*   screen computer   */
+@media (min-width: 768px) {
+    a.Heilton-logo {
+        float: right;
+        min-width: 200px;
+        min-height:32px;
+       padding:0;
+       border-bottom:0;
+     
+    }
+        a.Heilton-logo h3 {
+            padding-top: 0;
+            margin-top: 5px;
+            margin-bottom:1px;
+        }
+        #Heilton-MenuTop {
+            margin-right: 200px;
+        }
+    #Heilton-asideLeft {
+        top: 57px;
+    }
+
+   
+    #Heilton-AdminPic {
+        top: 57px;
+    }
+    #Heilton-asideRight {
+        display:block;
+        margin-top: 35px;
+    }
+    #Heilton-Center {
+        margin-right: 200px;
+      
+        padding-top: 35px;
+    }
+}
+
+.sidebar-dropdown .sidebar-submenu {
+    display: none;
+}
+
+.active-submenu {
+    display: block !important;
+    position: absolute;
+    right: 49px;
+    padding: 5px 10px 0 0;
+    top: 0;
+    min-height: 38px;
+    min-width: 250px;
+    background-color: black;
+}
+/*status url*/
+
